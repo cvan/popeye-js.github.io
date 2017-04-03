@@ -1,56 +1,55 @@
 <!doctype html>
 <html lang="en" data-page="index">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popeye</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="js/main.js" async defer></script>
+    <script src="js/lib/annyang.min.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js" integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow=" crossorigin="anonymous"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>popeye</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <script src="js/main.js" async defer></script>
-  <script src="js/lib/annyang.min.js" async defer></script>
-  <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js" integrity="sha256-qLAv0kBAihcHZLI3fv3WITKeRsUX27hd6upBBa0MSow=" crossorigin="anonymous"></script>
-</head>
+  <body class="index">
+    <div class="wrap">
+      <header class="header">
+        <div class="content-wrap">
+          <header class="page-title">
+            <h1 class="site-title"><a href="./">popeye</a></h1>
+            <p class="log-in">
+              <a class="btn log-in-btn" id="log-in-btn" href="https://api.put.io/v2/oauth2/login?next=https%3A%2F%2Fapi.put.io%2Fv2%2Foauth2%2Fauthenticate%3Fclient_id%3D2801%26response_type%3Dtoken%26redirect_uri%3Dhttps%3A%252F%252Fpopeye-js.github.io%3A7000%252F">
+                  Log in to <strong>Put.io</strong>
+                </a>
+            </p>
+          </header>
+        </div>
+      </header>
+      <main id="content" class="content">
 
-<body class="index">
-  <div class="wrap">
-    <header class="header">
-      <div class="content-wrap">
-        <header class="page-title">
-          <h1 class="site-title"><a href="./">popeye</a></h1>
-          <p class="log-in">
-            <a class="btn log-in-btn" id="log-in-btn" href="https://api.put.io/v2/oauth2/login?next=https%3A%2F%2Fapi.put.io%2Fv2%2Foauth2%2Fauthenticate%3Fclient_id%3D2801%26response_type%3Dtoken%26redirect_uri%3Dhttps%3A%252F%252Fpopeye-js.github.io%3A7000%252F">
-                Log in to <strong>Put.io</strong>
-              </a>
-          </p>
-        </header>
-      </div>
-    </header>
-    <main id="content" class="content">
-
-      <div class="google-microphone">
-        <div id='listenShadow' class="shadow">
-          <div class="gn">
-            <div class="mc"></div>
+        <div class="google-microphone">
+          <div id='listenShadow' class="shadow">
+            <div class="gn">
+              <div class="mc"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="results" class="results" aria-hidden="true">
-        <h2 id="results-heading" class="results-heading">Results for <strong id="results-term" class="results-term"></strong>&hellip;</h2>
-        <ol id="results-list" class="results-list"></ol>
-        <a href="#" id="results-close" class="results-close" title="Close">&times;</a>
-      </div>
+        <div id="results" class="results" aria-hidden="true">
+          <h2 id="results-heading" class="results-heading">Results for <strong id="results-term" class="results-term"></strong>&hellip;</h2>
+          <ol id="results-list" class="results-list"></ol>
+          <a href="#" id="results-close" class="results-close" title="Close">&times;</a>
+        </div>
 
-      <ol id="command-logs" class="command-logs"></ol>
+        <ol id="command-logs" class="command-logs"></ol>
 
-    </main>
-  </div>
-  <!-- TODO: Add Google Analytics -->
-</body>
+      </main>
+    </div>
 
-<script src="js/voiceUI.js" async defer></script>
-<script src="js/speech.js" async defer></script>
+    <!-- TODO: Add Google Analytics -->
 
+    <script src="js/voiceUI.js" async defer></script>
+    <script src="js/speech.js" async defer></script>
+  </body>
 </html>
